@@ -15,7 +15,7 @@ local triggers = {
 		return -- End if the sender is blacklisted.
 	end
 
-	if not string.match(msg.text_lower, '^لیست سیاه') then
+	if not string.match(msg.text_lower, '^[!/#]blacklist') then
 		return true
 	end
 
