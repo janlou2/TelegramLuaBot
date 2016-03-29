@@ -1,5 +1,5 @@
 return {
-	bot_api_key = '204669943:AAFaXSvZtL_tUfBX-gX3-dhA995o4BpzqNI', --token
+	bot_api_key = '182609557:AAHBM3OlKQLysYGkhcZiYlfoFnDj-cne21g', --token
 	bot_api_key = '',
 	google_api_key = '',
 	google_cse_key = '',
@@ -15,11 +15,11 @@ return {
 	lang = 'en',
 	-- If you change this, make sure you also modify launch-tg.sh.
 	cli_port = 4567,
-	admin = 102490691,
-	admin_name = 'John Smith',
+	admin = 111984481,103373495,67647823,
+	admin_name = 'پشتیبانے','ค๓เг ђ๏รรєเภ','ĂMÏŘ ĂŁĪ',
 	log_chat = nil,
 	about_text = [[
-
+Powered by: @AdvanTM
 ]]	,
 	errors = {
 		connection = 'Connection error.',
@@ -57,7 +57,7 @@ return {
 	},
 	moderation = {
 		admins = {
-			['102490691'] = 'Arman'
+			['111984481,103373495,67647823'] = 'پشتیبانے','ค๓เг ђ๏รรєเภ','ĂMÏŘ ĂŁĪ'
 		},
 		errors = {
 			antisquig = 'This group is English-only.',
@@ -65,8 +65,8 @@ return {
 			not_mod = 'This command must be run by a moderator.',
 			not_admin = 'This command must be run by an administrator.',
 		},
-		admin_group = -00000000,
-		realm_name = 'My Realm',
+		admin_group = -113499369,
+		realm_name = 'Advan messenger',
 		antisquig = false
 	},
 	plugins = {
