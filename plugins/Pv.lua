@@ -14,7 +14,7 @@ local action = function(msg)
     if msg.chat.type ~= 'private' then
         return nil
     end
-    if string.match(msg.text, '^/a') then
+    if string.match(msg.text, '^(.*)') then
         local receiver = config.admin
         local input = msg.text:input()
 	if database.blacklist[msg.from.id_str] then
@@ -46,7 +46,7 @@ local action = function(msg)
 	    sendMessage(msg.from.id, '*pm sent*\n*Arman Bot Service Msg\n*Your Pm??\n\n'..input, true, false, true) -- You Can ReplaceArman Bot Service Msg
 	end
 	
-	if string.match(msg.text, '^/u') then
+	if string.match(msg.text, '^(.*)') then
 	    if msg.from.id ~= config.admin then
 	        return nil
 	    end
@@ -62,7 +62,7 @@ local action = function(msg)
 	end
 
 
-            sendMessage(msg.from.id, 'Type /u <Pm>"')
+            sendMessage(msg.from.id, 'Type <Pm>"')
             return nil
         end
 		msg = msg.reply_to_message
